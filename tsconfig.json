@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "allowUnreachableCode": false,
+    "allowUnusedLabels": false,
+    "strict": true,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitReturns": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "noUncheckedIndexedAccess": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "target": "ES5",
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "outDir": "./build",
+  },
+  "include": ["src/**/*.ts"]
+}

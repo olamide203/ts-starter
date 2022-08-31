@@ -1,0 +1,42 @@
+{
+  "name": "ts-starter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "lint": "eslint src/**/*.ts test/**/*.ts",
+    "dev": "tsx watch src/**/*.ts",
+    "lint:fix": "eslint src/**/*.ts test/**/*.ts --fix",
+    "test": "vitest run",
+    "test:dev": "vitest",
+    "typecheck": "tsc --noEmit",
+    "build": "tsc",
+    "prepare": "husky install"
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  },
+  "lint-staged": {
+    "*.(ts|js)": "eslint --fix"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.0.0",
+    "@typescript-eslint/parser": "^5.36.1",
+    "cz-conventional-changelog": "3.3.0",
+    "eslint": "^8.0.1",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-import-resolver-typescript": "^3.5.0",
+    "eslint-plugin-import": "^2.25.2",
+    "husky": "^8.0.0",
+    "lint-staged": "^13.0.3",
+    "tsx": "^3.9.0",
+    "typescript": "*",
+    "vitest": "^0.22.1"
+  }
+}
